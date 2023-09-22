@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": ["es2015", "DOM"],
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "./dist", // Specify the directory where compiled JavaScript will be outputted
+    "rootDir": "./", // Specify the root directory of your TypeScript source files
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "ormconfig.json"]
+}
