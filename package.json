@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node ./src/index.ts",
+    "start": "ts-node ./index.ts",
     "dev": "nodemon index.ts",
-    "slam": "nodemon --exec npx ts-node ./src/index.ts"
+    "slam": "nodemon --exec npx ts-node ./index.ts"
   },
   "nodemonConfig": {
     "ignore": [
