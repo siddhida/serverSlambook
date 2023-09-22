@@ -8,6 +8,7 @@ import { TaskController } from './controllers/TaskController';
 import { UserController } from './controllers/UserController';
 import { BookController } from './controllers/BookController';
 import { PalController } from './controllers/PalController';
+import { HomeController } from './controllers/HomeController';
 
 const { config } = require("./../ormconfig");
 const PORT = 3005;
@@ -35,7 +36,8 @@ createConnection(config)
   container.resolve(UserController);
   container.resolve(BookController);
   container.resolve(PalController);
-  let containers = [UserController, BookController, PalController, TaskController];
+  let containers = [HomeController];
+  // let containers = [HomeController,UserController, BookController, PalController, TaskController];
  //================================================================ 
   // const app = createExpressServer({
   //   controllers: [UserController, ProductController], // Add your controllers here
