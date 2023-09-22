@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node ./dist/index.js",
+    "start": "ts-node ./src/index.ts",
     "dev": "nodemon index.ts",
     "slam": "nodemon --exec npx ts-node ./src/index.ts"
   },
