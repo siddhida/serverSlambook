@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf ./build && tsc",
-    "start": "node ./dist/app.js",
+    "start": "npm run build && node ./dist/index.js",
     "dev": "nodemon index.ts",
-    "slam": "nodemon --exec npx ts-node ./index.ts"
+    "slam": "nodemon --exec npx ts-node ./src/index.ts"
   },
   "nodemonConfig": {
     "ignore": [

@@ -4,12 +4,12 @@ import express, { urlencoded, Express } from "express";
 import cors from 'cors';
 import { createConnection, Connection } from "typeorm";
 import { useExpressServer } from 'routing-controllers';
-import { TaskController } from './src/controllers/TaskController';
-import { UserController } from './src/controllers/UserController';
-import { BookController } from './src/controllers/BookController';
-import { PalController } from './src/controllers/PalController';
+import { TaskController } from './controllers/TaskController';
+import { UserController } from './controllers/UserController';
+import { BookController } from './controllers/BookController';
+import { PalController } from './controllers/PalController';
 
-const { config } = require("./ormconfig");
+const { config } = require("./../ormconfig");
 const PORT = 3005;
 const app: Express = express();
 // let containers = [UserController, ProductController];
