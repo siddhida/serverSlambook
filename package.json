@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel-build": "echo hello",
     "start": "ts-node ./index.ts",
     "dev": "nodemon index.ts",
     "slam": "nodemon --exec npx ts-node ./index.ts"
