@@ -1,5 +1,5 @@
 {
-    "versons":2,
+    "version":2,
     "builds": [
         {
             "src": "dist/src/index.js",
