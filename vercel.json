@@ -2,7 +2,7 @@
     "versons":2,
     "builds": [
         {
-            "src": "dist/index.js",
+            "src": "dist/src/index.js",
             "use": "@vercel/node"
         }
     ],
